@@ -7,6 +7,7 @@ node /^ubuntu/ {
 
   exec { 'update-apt-packages':
     command => '/usr/bin/apt-get update -y',
+	timeout     => 1800,
     creates => '/vagrant/.locks/update-apt-packages',
   }
 
@@ -43,6 +44,7 @@ node /^centos-7-0/ {
 
   exec { 'update-rpm-packages':
     command => '/usr/bin/yum update -y',
+	timeout     => 1800,
     creates => '/vagrant/.locks/update-rpm-packages',
   }
 
@@ -76,9 +78,10 @@ node /^centos-7-0/ {
 }
 
 node /^centos/ {
-
+  
   exec { 'update-rpm-packages':
     command => '/usr/bin/yum update -y',
+	timeout     => 1800,
     creates => '/vagrant/.locks/update-rpm-packages',
   }
 
