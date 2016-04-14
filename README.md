@@ -1,4 +1,4 @@
-Boundary Elastic Search
+Boundary Nginx
 =======================
 
 Configures an virtual machine with an Nginx instance for testing Boundary Plugin for Nginx
@@ -18,7 +18,7 @@ Prior to installation you need to obtain in your Boundary API Token.
 
 1. Clone the GitHub Repository:
 ```bash
-$ git clone https://github.com/jdgwartney/boundary-vagrant-nginx
+$ git clone https://github.com/jdgwartney/meter-vagrant-nginx
 ```
 
 2. Start the virtual machine using your Boundary API Token:
